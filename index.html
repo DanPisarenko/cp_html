@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <title>Control-Point</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .menu{
+            background: none;
+            border: none;
+            font-size: 32px;
+        }
+        .h2_title{
+            font-size: 4.2rem;
+        }
+        .pa_ttl{
+            font-size: 1.5rem;
+            font-weight: lighter;
+        }
+        .ddd2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ddd3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ddd5{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .ddd2 .ddd3 .ddd6 .ddd7 .ddd5{
+            position: relative;
+            width: 100%;
+        }
+
+        .ddd6{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(196, 196, 196);
+            margin-top: 50px;
+
+        }
+        .ddd7{
+            position: relative;
+            width: 100%;
+            height: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(196, 196, 196);
+            margin-top: 50px;
+
+        }
+        .img_night{
+            background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614677725_18-p-fon-velosport-21.jpg);
+            width: 520px;
+            height: 520px;
+            background-size: cover;
+        background-position: center;
+        }
+        .bl1{
+            position: relative;
+            width: 50%;
+        }
+        .shtanga{
+            position: relative;
+            width: 512px;
+            bottom: 0%;
+            left: 0%;
+        }
+        .bl2{
+            width: 50%;
+            height: 500px;
+            background-color: #fff;
+        }
+        .ddddddd{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+
+        }
+        .album{
+            position: relative;
+            width: 100%;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 50px;
+
+        }
+        .step{
+            width: 250px;
+            height: 250px;
+            background-color: whitesmoke;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 50px;
+            align-items: center;
+        }
+        .aaa_header{
+            text-decoration: none;
+
+        }
+
+        
+
+
+        .lend_pic{
+            background-image: url(https://www.atlant-sport.ru/ckfinder/userfiles/images/665.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 750px;
+            height: 790px;
+        }
+        .pic2{
+            background-image: url(https://sportishka.com/uploads/posts/2021-12/1638512313_34-sportishka-com-p-khobbi-velosport-krasivie-sportivnie-foto-39.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 750px;
+            height: 790px;
+        }
+        .img1337{
+            position: relative;
+            background-image: url(https://velodaily.ru/wp-content/uploads/2020/11/123452039_3749529211732960_6646904264849653493_o.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 512px;
+        height: 380px;
+        top: 0%;
+        right: -47%;
+        }
+        .img555{
+            position: relative;
+            background-image: url(https://www.usports.ru/sites/usp/files/collections/0/392/nizkaya_posadka_velo.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        width: 380px;
+        height: 380px;
+        }
+        .grid_patrn{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .item_p{
+            background-size: cover;
+        background-position: center;
+        width: 380px;
+        height: 160px;
+        }
+        .i1{
+            background-image: url(https://maksibezopasnost.ru/images/logos/sportmaster.png);
+        }
+        .i2{
+            background-image: url(https://1000logos.net/wp-content/uploads/2021/11/logo-Demix-2048x1152.png);
+        }
+        .i3{
+            background-image: url(https://shopstat.ru/upload/444.jpg);
+            border-radius: 8px;
+        }
+        .i4{
+            background-image: url(https://overclockers.ru/st/legacy/blog/400034/237997_O.jpg);
+            border-radius: 8px;
+        }
+        .i5{
+            background-image: url(https://cdn140.picsart.com/304827045091211.png);
+        }
+        .i6{
+            background-image: url(https://i.pinimg.com/originals/21/68/f4/2168f4ca2d46978598b5cd3142375d3f.png);
+            border-radius: 8px;
+        }
+        .lend_desc{
+            width: 800px;
+            margin-top: 12vh;
+            padding-left: 35px;
+        height: inherit;
+        color: white;
+        }
+        .desc1{
+            width: 50%;
+        }
+        .lending{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(73, 73, 73);
+        }
+        .inp{
+            width: 512px;
+            height: 64px;
+            font-size: 32pt;
+        }
+        
+        .big_btn{
+            margin-top: 35px;
+            width: 190px;
+            height: 48px;
+            border: none;
+            font-size: 25px;
+        }
+        .big_btn_black{
+            margin-top: 35px;
+            width: 190px;
+            height: 48px;
+            border: none;
+            font-size: 25px;
+            background-color: #000;
+            color: #fff;
+        }
+        .ddd4{
+            margin-top: 50px;
+            display: flex;
+            background-color: rgb(73, 73, 73);
+            flex-direction: row-reverse;
+        }
+        .thh{
+            position: relative;
+            font-weight: bold;
+            font-size: 72px;
+            color: white;
+            top: 75%;
+            left: -23%;
+        }
+        .ffd{
+            display: flex;
+            flex-direction: row;
+        }
+        .alb_pic{
+            margin: 15px;
+            width: 50%;
+        height: 640px
+        }
+        .popup{
+            padding: 50px;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .alb_pic1{
+            background-image: url(https://sportishka.com/uploads/posts/2021-12/1638512307_11-sportishka-com-p-khobbi-velosport-krasivie-sportivnie-foto-12.jpg);
+            background-size: cover;
+        background-position: center;
+
+        }
+        .alb_pic2{
+            background-image: url(https://sarvelo.ru/wp-content/uploads/d/2/b/d2b04d34c4f82c8470e04e1884070c4a.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+        .alb_pic3{
+            background-image: url(https://транс-атлантис.рф/800/600/https/pixy.org/src2/596/5960775.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 800px;
+        }
+        .ddddddd_h2{
+            font-size: 48pt;
+            font-weight: bolder;
+        }
+        .ddddddd_p{
+            font-size: 28pt;
+            font-weight:100;
+        }
+        .lli{
+            padding-right: 35px;
+        }
+        .bl2_h2{
+            font-size: 35pt;
+            padding-left: 35px;
+        }
+        .bl2_p{
+            font-size: 18pt;  padding-left: 35px;
+        }
+        .bl2_h21{
+    left: 33px;
+    font-size: 35pt;
+    padding-left: 35px;
+
+}
+.bl2_p1{
+
+    left: 33px;
+    font-size: 35pt;
+    padding-left: 35px;
+
+}
+
+.ddddddd_h2{
+    font-size: 48pt;
+}
+.ddddddd_p{
+    font-size: 28pt;
+}
+
+        @media screen and (max-width : 1280px) {
+            body{
+                overflow-x: hidden;
+
+            }
+            .lend_pic{
+
+        width: 620px;
+        height: 650px;
+        }
+        }
+        @media screen and (max-width : 1024px) {
+            body{
+                overflow-x: hidden;
+
+            }
+        }
+        .ddd8{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: white;
+        }
+        
+        @media screen and (max-width : 440px)  {
+            body{
+                overflow-x: hidden;
+
+            }
+            .lending{
+            display: flex;
+            flex-direction: column-reverse  ;
+            background-color: rgb(73, 73, 73);
+            }
+            .lend_desc{
+            width: 320px;
+            margin-bottom: 7.5vh;
+            padding-left: 35px;
+            height: inherit;
+            color: white;
+            margin-top: 0;
+            }
+            .h2_title{
+            font-size: 2.2rem;
+            }
+            .lend_pic{
+            width: 100%;
+            height: 400px;
+            }
+            .pa_ttl{
+            font-size: 0.78rem;
+            font-weight: lighter;
+            }
+            .album{
+            position: relative;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 50px;
+            }
+            .alb_pic{
+            margin: 15px;
+            width: 95%;
+            height: 380px
+            }
+            .alb_pic3{
+                display: none;
+            }
+            .ffd{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+            .popup{
+            padding: 25px;
+            width: 65%;
+            height: 300px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .ddddddd_h2{font-size: 24pt}
+        .ddddddd_p{font-size: 22pt}
+        .ddddddd{width: 72%}
+        .ddd4{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .pic2{
+        width: 85%;
+        height: 400px;
+        margin: 25px;
+        }
+        .lli{
+            padding-right: 0;
+            font-size: 18pt;
+        }
+        .thh {
+    position: relative;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    top: 77%;
+    left: 4%;
+}
+
+.desc1 {
+    width: 85%;
+}
+.img1337{
+    width: 364px;
+    height: 288px;
+    top: 0%;
+    right: -25px;
+
+}
+.bl2_h2{
+    position: absolute;
+    left: 33px;
+    margin-top: 406px;
+    font-size: 35pt;
+    padding-left: 35px;
+
+}
+.bl2_p{
+
+    position: absolute;
+    left: 33px;
+    margin-top: 406px;
+    font-size: 35pt;
+    padding-left: 35px;
+
+}
+.bl2_h21{
+    left: 33px;
+    margin-top: 0;
+    font-size: 28pt;
+    padding-left: 35px;
+
+}
+.bl2_p1{
+
+    left: 33px;
+    margin-top: 0;
+    font-size: 18pt;
+    padding-left: 35px;
+
+}
+.img555 {
+
+    width: 250px;
+    height: 250px;
+    margin-bottom: 32px;
+}
+.grid_patrn {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.ddd6 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 151, 151);
+    margin-top: 50px;
+    padding-bottom: 35px;
+    
+}
+.inp {
+    width: 250px;
+    height: 16px;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+.ddddddd_h2{
+    font-size: 28pt;
+}
+.ddddddd_p{
+    font-size: 24pt;
+}
+.ddd7{
+            position: relative;
+            width: 100%;
+            height: 800px;
+            flex-direction: column;
+
+            margin-top: 50px;
+
+        }
+                .step{
+            width: 92%;
+            height: 160px;
+            background-color: whitesmoke;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .img_night{
+            width: 100%;
+            height: 520px;
+
+        }
+        .steps{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="aaa_header" style="color: black;"><h1>Jack Garry</h1></a>
+<button class="menu" onclick="alert('menu')"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <main>
+        <section class="ddd">
+            <div class="lending">
+                <div class="lend_pic"></div>
+                <div class="lend_desc">
+                    <h2 class="h2_title">Велогонки стали популярны</h2>
+                    <p class="pa_ttl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus molestiae doloremque itaque inventore voluptas necessitatibus eligendi nisi? Inventore at facere voluptates nulla sint eum, suscipit, quisquam adipisci reiciendis a necessitatibus.</p>
+                    <i>Image from Jack</i>
+                    <br>
+                    <button class="big_btn" onclick="">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="ddd2">
+            <div class="album">
+                <div class="ffd">
+            <div class="alb_pic1 alb_pic"></div>
+            <div class="alb_pic2 alb_pic"></div>
+                </div>
+            <div class="alb_pic3 alb_pic"></div>
+            </div>
+            <div class="popup">
+                <div class="info">
+                    <h3>Bicycling</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos amet totam?</p>
+                    <button class="big_btn_black" onclick="">Learn More</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="ddd3" >
+            <div class="ddddddd">
+            <h2 class="ddddddd_h2">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="ddddddd_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam praesentium recusandae.</p>
+            <button class="big_btn_black">Learn more</button>
+            </div>
+        </section>
+        <section class="ddd4">
+
+            <div class="pic2">
+                <span class="thh">
+                    about
+                    <br>
+                    bicycling
+                </span>
+            </div>
+            <div class="desc1">
+                <p class="ddddddd_p lli" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quibusdam obcaecati cumque, doloremque inventore possimus consequuntur!</p>
+            </div>
+        </section>
+
+        <section class="ddd3">
+            <div class="ddddddd">
+                <h2 class="ddddddd_h2">Lorem ipsum dolor sit amet consectetur</h2>
+                <p class="ddddddd_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam praesentium recusandae.</p>
+                <div class="img555"></div>
+                <i>Image from Jack</i>
+                </div>
+        </section>
+        <section class="ddd6">
+            <div class="descr1337">
+                <h2 class="bl2_h21" style="color: white; text-align: center;">Lorem, ipsum dolor.</h2>
+                <p class="bl2_p1" style="color: #fff; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, deserunt?</p>
+            </div>
+            <div class="grid_patrn">
+                <div class="item_p i1"></div>
+                <div class="item_p i2"></div>
+                <div class="item_p i3"></div>
+                <div class="item_p i4"></div>
+                <div class="item_p i5"></div>
+                <div class="item_p i6"></div>
+            </div>
+        </section>
+        <section class="ddd7">
+            <div class="steps">
+                <div class="step s1">
+                    <h2 style="text-align: center;">1</h2>
+                    <h3 style="text-align: center;">buy bicycle</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="step s2">
+                    <h2 style="text-align: center;">2</h2>
+                    <h3 style="text-align: center;">Let's Go</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="img_night"></div>
+        </section>
+        <section class="ddd8">
+            <div class="ddddddd">
+                <h2 class="ddddddd_h2" >Lorem ipsum dolor sit amet consectetur</h2>
+                <p class="ddddddd_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam praesentium recusandae.</p>
+                <button class="big_btn" style="margin-bottom: 25px;">Learn more</button>
+                </div>
+        </section>
+        <section class="ddd9">
+            <div class="lending">
+                <div class="lend_pic"></div>
+                <div class="lend_desc">
+                    <h2>Contact Us</h2>
+                    <form action="" method="post">
+                        <input type="text" class="name inp" placeholder="Ваше имя">
+                        <br>
+                        <input type="email" class="email inp" placeholder="Ваш email">
+                        <br>
+                        <input type="text" class="message inp" placeholder="ваше сообщение">
+                        <br>
+                        <button class="big_btn" onclick="">Send</button>
+                    </form>
+                    </div>
+        </section>
+    </main>
+</body>
+</html>
